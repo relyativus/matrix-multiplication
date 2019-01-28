@@ -35,7 +35,7 @@ public class StrassenRecursiveMultiplicationTask extends RecursiveAction {
 
     @Override
     protected void compute() {
-        if (threshold == size) {
+        if (threshold <= size) {
             multiplicationStrategy.multiply(a, b, c);
             return;
         }
